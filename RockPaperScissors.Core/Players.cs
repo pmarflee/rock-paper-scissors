@@ -33,7 +33,7 @@ namespace RockPaperScissors.Core
 
     public class RandomComputerPlayer : Player
     {
-        private readonly Random _random = new Random();
+        private readonly CryptoRandom _random = new CryptoRandom();
 
         public RandomComputerPlayer(int number) : base(number) { }
 
